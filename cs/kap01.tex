@@ -1,13 +1,59 @@
 %%% Fiktivní kapitola s ukázkami sazby
 
-\chapter{Nápověda k~sazbě}
+
+
+\chapter{Teoretický základ}
+\section{Parametry kamery}
+
+Zde definujeme parametry kamerového snímače a objektivu a orientace kamery v terénu. Tyto parametry kamery budeme potřebovat pro určení pozice na obloze bodu zachyceného kamerou.
+
+\begin{definice}[Azimut]\label{def01:1}
+  Azimut $\phi$ je úhel vodorovného směru kamery, měřený od severu ve směru hodinových ručiček. Hodnoty azimutu $\phi$ se pohybují v rozmezí $0^\circ$ až $360^\circ$.
+\end{definice}
+
+\begin{definice}[Zenit]\label{def01:2}
+  Zenit $\theta$ je úhel vertikálního směru kamery, měřený od bodu přímo nad kamerou (zenit) směrem dolů k horizontu. Hodnoty zenitu $\theta$ se pohybují v rozmezí $0^\circ$ až $90^\circ$.
+\end{definice}
+
+\begin{definice}[Zorné pole]\label{def01:3}
+  Zorné pole $\omega$ (Field of View, FOV) je úhel, který ohraničuje prostor viditelný kamerou. Rozlišujeme horizontální a vertikální zorné úhly, které se označují jako $\omega_h$ a $\omega_v$.
+\end{definice}
+
+\begin{definice}[Ohnisko]\label{def01:4}
+  Ohnisko je bod ve kterém se sbíhají paprsky světla procházející objektivem, když je objektiv zaostřen na nekonečno. Ohnisko je důležité pro určení ohniskové vzdálenosti objektivu.
+\end{definice}
+
+\begin{definice}[Ohnisková vzdálenost]\label{def01:5}
+  Ohnisková vzdálenost f objektivu je vzdálenost mezi ohniskem objektivu a snímacím čipem (nebo filmovou vrstvou) kamery, když je objektiv zaostřen na nekonečno.
+
+  Ohnisková vzdálenost ovlivňuje zorný úhel kamery a perspektivní zkreslení obrazu. Je obvykle vyjádřena v jednotkách délky, např. milimetrech. Objektivy s vyšší ohniskovou vzdáleností mají úžší zorné pole, objektivy s nižší ohniskovou vzdáleností mají širší zorné pole.
+\end{definice}
+
+\begin{lemma}\label{lemma01:1}
+  Pro daný objektiv a snímací čip kamery je zorný úhel $\omega$ (ve stupních) ve vodorovném směru úzce spojen s ohniskovou vzdáleností $f$ (v milimetrech) a šířkou snímacího čipu $W$ (v milimetrech) nebo se šířkou obrazu v pixelech $w$ a velikostí jednoho pixelu $p$ (v milimetrech) následujícím vztahem:
+  \begin{equation}\label{eq01:1}
+    \omega_h = 2 \arctan \left(\frac{W}{2f}\right) = 2 \arctan \left(\frac{wp}{2f}\right).
+  \end{equation}
+\end{lemma}
+\begin{dukaz}
+  Vztah je dán goniometrií pravoúhlého trojúhelníku, jehož odvěsny jsou $2f$ a $W$.
+\end{dukaz}
+
+\section{Parametrizace bodu na obloze}
+Bod na obloze je jednoznačně určen jeho azimutem $\phi_p$ a zenitem $\theta_p$. Tyto dva úhly můžeme vypočítat z bodu pixelu na kameře a z parametrů kamery.
+
+
+Pokud známe orientaci kamery $\phi_c$ (zenit) a $\theta_c$ (zenit) a $f_c$ (ohnisková vzdálenost) a rozlišení obrázku  $(W, H)$,
+
+\begin{lemma}\label{lemma01:2}
+  Buď  $\phi_c$ azimut kamery, $\theta_c$ zenit kamery, $f_c$ ohnisková vzdálenost kamery v pixelech, $(W, H)$ rozlišení snímku, ($x_p, y_p$) pozice pixelu (horizontální a vertikální vzdálenost od levého horního rohu snímku). Nechť $u_p = x_p - W/2$, $v_p = H/2 - y_p$
+\end{lemma}. Pak
+
+
+
 
 \section{Úprava práce}
 
-Vlastní text bakalářské práce je uspořádaný hierarchicky do kapitol a podkapitol,
-každá kapitola začíná na nové straně. Text je zarovnán do bloku. Nový odstavec
-se obvykle odděluje malou vertikální mezerou a odsazením prvního řádku. Grafická
-úprava má být v~celém textu jednotná.
 
 Práce se tiskne na bílý papír formátu A4. Okraje musí ponechat dost místa na vazbu:
 doporučen je horní, dolní a pravý okraj $25\,\rm mm$, levý okraj $40\,\rm mm$.
@@ -76,22 +122,22 @@ $5/7$, $(x+y)/2$.
 
 Nechť
 \[   % LaTeXová náhrada klasického TeXového $$
-\mathbb{X} = \begin{pmatrix}
-      \T{\bm x_1} \\
-      \vdots \\
-      \T{\bm x_n}
-      \end{pmatrix}.
+  \mathbb{X} = \begin{pmatrix}
+    \T{\bm x_1} \\
+    \vdots      \\
+    \T{\bm x_n}
+  \end{pmatrix}.
 \]
 Povšimněme si tečky za~maticí. Byť je matematický text vysázen
 ve~specifickém prostředí, stále je gramaticky součástí věty a~tudíž je
 zapotřebí neopomenout patřičná interpunkční znaménka. Výrazy, na které
 chceme později odkazovat, je vhodné očíslovat:
 \begin{equation}\label{eq01:Xmat}
-\mathbb{X} = \begin{pmatrix}
-      \T{\bm x_1} \\
-      \vdots \\
-      \T{\bm x_n}
-      \end{pmatrix}.
+  \mathbb{X} = \begin{pmatrix}
+    \T{\bm x_1} \\
+    \vdots      \\
+    \T{\bm x_n}
+  \end{pmatrix}.
 \end{equation}
 Výraz \eqref{eq01:Xmat} definuje matici $\mathbb{X}$. Pro lepší čitelnost
 a~přehlednost textu je vhodné číslovat pouze ty výrazy, na které se
@@ -101,82 +147,82 @@ prostředí.
 
 Zarovnání vzorců do několika sloupečků:
 \begin{alignat*}{3}
-S(t) &= \pr(T > t),    &\qquad t&>0       &\qquad&\text{ (zprava spojitá),}\\
-F(t) &= \pr(T \leq t), &\qquad t&>0       &\qquad&\text{ (zprava spojitá).}
+  S(t) & = \pr(T > t),    & \qquad t & >0 & \qquad & \text{ (zprava spojitá),} \\
+  F(t) & = \pr(T \leq t), & \qquad t & >0 & \qquad & \text{ (zprava spojitá).}
 \end{alignat*}
 
 Dva vzorce se spojovníkem:
 \begin{equation}\label{eq01:FS}
-\left.
-\begin{aligned}
-S(t) &= \pr(T > t) \\[1ex]
-F(t) &= \pr(T \leq t)
-\end{aligned}
-\;	% zde pomůže ručně vynechat trochu místa
-\right\}
-\quad t>0 \qquad \text{(zprava spojité).}
+  \left.
+  \begin{aligned}
+    S(t) & = \pr(T > t)    \\[1ex]
+    F(t) & = \pr(T \leq t)
+  \end{aligned}
+  \;	% zde pomůže ručně vynechat trochu místa
+  \right\}
+  \quad t>0 \qquad \text{(zprava spojité).}
 \end{equation}
 
 Dva centrované nečíslované vzorce:
 \begin{gather*}
-\bm Y = \mathbb{X}\bm\beta + \bm\varepsilon, \\[1ex]
-\mathbb{X} = \begin{pmatrix} 1 & \T{\bm x_1} \\ \vdots & \vdots \\ 1 &
-  \T{\bm x_n} \end{pmatrix}.
+  \bm Y = \mathbb{X}\bm\beta + \bm\varepsilon, \\[1ex]
+  \mathbb{X} = \begin{pmatrix} 1 & \T{\bm x_1} \\ \vdots & \vdots \\ 1 &
+                \T{\bm x_n}\end{pmatrix}.
 \end{gather*}
 Dva centrované číslované vzorce:
 \begin{gather}
-\bm Y = \mathbb{X}\bm\beta + \bm\varepsilon, \label{eq02:Y}\\[1ex]
-\mathbb{X} = \begin{pmatrix} 1 & \T{\bm x_1} \label{eq03:X}\\ \vdots & \vdots \\ 1 &
-  \T{\bm x_n} \end{pmatrix}.
+  \bm Y = \mathbb{X}\bm\beta + \bm\varepsilon, \label{eq02:Y}\\[1ex]
+  \mathbb{X} = \begin{pmatrix} 1 & \T{\bm x_1} \label{eq03:X} \\ \vdots & \vdots \\ 1 &
+                \T{\bm x_n}\end{pmatrix}.
 \end{gather}
 
 Definice rozdělená na dva případy:
 \[
-P_{r-j}=
-\begin{cases}
-0, & \text{je-li $r-j$ liché},\\
-r!\,(-1)^{(r-j)/2}, & \text{je-li $r-j$ sudé}.
-\end{cases}
+  P_{r-j}=
+  \begin{cases}
+    0,                  & \text{je-li $r-j$ liché}, \\
+    r!\,(-1)^{(r-j)/2}, & \text{je-li $r-j$ sudé}.
+  \end{cases}
 \]
 Všimněte si použití interpunkce v této konstrukci. Čárky a tečky se
 dávají na místa, kam podle jazykových pravidel patří.
 
 \begin{align}
-x& = y_1-y_2+y_3-y_5+y_8-\dots = && \text{z \eqref{eq02:Y}} \nonumber\\
-& = y'\circ y^* = && \text{podle \eqref{eq03:X}} \nonumber\\
-& = y(0) y' && \text {z Axiomu 1.}
+  x & = y_1-y_2+y_3-y_5+y_8-\dots = &  & \text{z \eqref{eq02:Y}} \nonumber     \\
+    & = y'\circ y^* =               &  & \text{podle \eqref{eq03:X}} \nonumber \\
+    & = y(0) y'                     &  & \text {z Axiomu 1.}
 \end{align}
 
 
 Dva zarovnané vzorce nečíslované:
 \begin{align*}
-L(\bm\theta) &= \prod_{i=1}^n f_i(y_i;\,\bm\theta), \\
-\ell(\bm\theta) &= \log\bigl\{L(\bm\theta)\bigr\} =
-\sum_{i=1}^n \log\bigl\{f_i(y_i;\,\bm\theta)\bigr\}.
+  L(\bm\theta)    & = \prod_{i=1}^n f_i(y_i;\,\bm\theta), \\
+  \ell(\bm\theta) & = \log\bigl\{L(\bm\theta)\bigr\} =
+  \sum_{i=1}^n \log\bigl\{f_i(y_i;\,\bm\theta)\bigr\}.
 \end{align*}
 Dva zarovnané vzorce, první číslovaný:
 \begin{align}
-L(\bm\theta) &= \prod_{i=1}^n f_i(y_i;\,\bm\theta), \label{eq01:L} \\
-\ell(\bm\theta) &= \log\bigl\{L(\bm\theta)\bigr\} =
-\sum_{i=1}^n \log\bigl\{f_i(y_i;\,\bm\theta)\bigr\}. \nonumber
+  L(\bm\theta)    & = \prod_{i=1}^n f_i(y_i;\,\bm\theta), \label{eq01:L} \\
+  \ell(\bm\theta) & = \log\bigl\{L(\bm\theta)\bigr\} =
+  \sum_{i=1}^n \log\bigl\{f_i(y_i;\,\bm\theta)\bigr\}. \nonumber
 \end{align}
 
 Vzorec na dva řádky, první řádek zarovnaný vlevo, druhý vpravo, nečíslovaný:
 \begin{multline*}
-\ell(\mu,\,\sigma^2) = \log\bigl\{L(\mu,\,\sigma^2)\bigr\} =
-\sum_{i=1}^n \log\bigl\{f_i(y_i;\,\mu,\,\sigma^2)\bigr\}= \\
+  \ell(\mu,\,\sigma^2) = \log\bigl\{L(\mu,\,\sigma^2)\bigr\} =
+  \sum_{i=1}^n \log\bigl\{f_i(y_i;\,\mu,\,\sigma^2)\bigr\}= \\
   = -\,\frac{n}{2}\,\log(2\pi\sigma^2) \,-\,
-\frac{1}{2\sigma^2}\sum_{i=1}^n\,(y_i - \mu)^2.
+  \frac{1}{2\sigma^2}\sum_{i=1}^n\,(y_i - \mu)^2.
 \end{multline*}
 
 Vzorec na dva řádky, zarovnaný na $=$, číslovaný uprostřed:
 \begin{equation}\label{eq01:ell}
-\begin{split}
-\ell(\mu,\,\sigma^2) &= \log\bigl\{L(\mu,\,\sigma^2)\bigr\} =
-\sum_{i=1}^n \log\bigl\{f(y_i;\,\mu,\,\sigma^2)\bigr\}= \\
-& = -\,\frac{n}{2}\,\log(2\pi\sigma^2) \,-\,
-\frac{1}{2\sigma^2}\sum_{i=1}^n\,(y_i - \mu)^2.
-\end{split}
+  \begin{split}
+    \ell(\mu,\,\sigma^2) &= \log\bigl\{L(\mu,\,\sigma^2)\bigr\} =
+    \sum_{i=1}^n \log\bigl\{f(y_i;\,\mu,\,\sigma^2)\bigr\}= \\
+    & = -\,\frac{n}{2}\,\log(2\pi\sigma^2) \,-\,
+    \frac{1}{2\sigma^2}\sum_{i=1}^n\,(y_i - \mu)^2.
+  \end{split}
 \end{equation}
 
 \section{Definice, věty, důkazy, \dots}
@@ -188,16 +234,16 @@ v~souboru s~makry (\texttt{makra.tex}) nadefinované jedno prostředí,
 které zajistí jak vizuální odlišení od okolního textu, tak
 automatické číslování s~možností křížově odkazovat.
 
-\begin{definice}\label{def01:1}
+\begin{definice}
   Nechť náhodné veličiny $X_1,\dots,X_n$ jsou definovány na témž
-  prav\-dě\-po\-dob\-nost\-ním prostoru $(\Omega,\,\mathcal{A},\,\pr)$. Pak
+  prav\-dě\-po\-dob\-nost\-ním prostoru $(\omega,\,\mathcal{A},\,\pr)$. Pak
   vektor $\bm X = \T{(X_1,\dots,X_n)}$ nazveme \emph{náhodným
     vektorem}.
 \end{definice}
 
-\begin{definice}[náhodný vektor]\label{def01:2}
+\begin{definice}[náhodný vektor]
   Nechť náhodné veličiny $X_1,\dots,X_n$ jsou definovány na témž
-  pravděpodobnostním prostoru $(\Omega,\,\mathcal{A},\,\pr)$. Pak
+  pravděpodobnostním prostoru $(\omega,\,\mathcal{A},\,\pr)$. Pak
   vektor $\bm X = \T{(X_1,\dots,X_n)}$ nazveme \emph{náhodným
     vektorem}.
 \end{definice}
@@ -207,16 +253,16 @@ sazbu definice s~titulkem.
 
 \begin{veta}\label{veta01:1}
   Náhodný vektor $\bm X$ je měřitelné zobrazení prostoru
-  $(\Omega,\,\mathcal{A},\,\pr)$ do $(\R_n,\,\mathcal{B}_n)$.
+  $(\omega,\,\mathcal{A},\,\pr)$ do $(\R_n,\,\mathcal{B}_n)$.
 \end{veta}
 
-\begin{lemma}[\citealp{Andel07}, str. 29]\label{veta01:2}
+\begin{lemma}[\citealp{Andel07}, str. 29]
   Náhodný vektor $\bm X$ je měřitelné zobrazení prostoru
-  $(\Omega,\,\mathcal{A},\,\pr)$ do $(\R_n,\,\mathcal{B}_n)$.
+  $(\omega,\,\mathcal{A},\,\pr)$ do $(\R_n,\,\mathcal{B}_n)$.
 \end{lemma}
 \begin{dukaz}
   Jednotlivé kroky důkazu jsou podrobně popsány v~práci \citet[str.
-  29]{Andel07}.
+    29]{Andel07}.
 \end{dukaz}
 Věta~\ref{veta01:1} ukazuje použití prostředí pro sazbu matematické
 věty bez titulku, lemma~\ref{veta01:2} ukazuje použití prostředí pro
