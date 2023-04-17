@@ -1,0 +1,79 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Chaos Czech a.s.}(2023)]{corona}
+{\sc {Chaos Czech a.s.}} (2023).
+\newblock {Corona Renderer}.
+\newblock \url{https://corona-renderer.com/}.
+\newblock Accessed: 2023-04-17.
+
+\bibitem[Emde a~kol.(2016)Emde, Buras-Schnell, Kylling, Mayer, Gasteiger,
+  Hamann, Kylling, Richter, Pause, Dowling a Bugliaro]{Libradtran2016}
+{\sc Emde, C., Buras-Schnell, R., Kylling, A., Mayer, B., Gasteiger, J.,
+  Hamann, U., Kylling, J., Richter, B., Pause, C., Dowling, T. {\rm a}
+  Bugliaro, L.} (2016).
+\newblock The libradtran software package for radiative transfer calculations
+  (version 2.0.1).
+\newblock \emph{Geoscientific Model Development}, {\bf 9}\penalty0 (5),
+  \penalty0 1647--1672.
+\newblock \doi{10.5194/gmd-9-1647-2016}.
+\newblock URL \url{https://gmd.copernicus.org/articles/9/1647/2016/}.
+
+\bibitem[Hoško(2014)]{Hosko14}
+{\sc Hoško, J.} (2014).
+\newblock Bezpečnostní kamerové systémy.
+\newblock Master's thesis, České vysoké učení technické v Praze.
+\newblock URL \url{https://dspace.cvut.cz/handle/10467/24416}.
+
+\bibitem[Lalonde a~kol.(2010)Lalonde, Narasimhan a Efros]{Lalonde10}
+{\sc Lalonde, J.-F., Narasimhan, S.~G. {\rm a} Efros, A.~A.} (2010).
+\newblock What do the sun and the sky tell us about the camera?
+\newblock \emph{International Journal on Computer Vision}, {\bf 88}\penalty0
+  (1), \penalty0 24--51.
+
+\bibitem[{Nikon}(2023)]{nikon}
+{\sc {Nikon}} (2023).
+\newblock {Understanding Focal Length}.
+\newblock
+  \url{https://www.nikonusa.com/en/learn-and-explore/a/tips-and-techniques/understanding-focal-length.html}.
+\newblock Accessed: 2023-04-17.
+
+\bibitem[Perez a~kol.(1993)Perez, Seals a Michalsky]{Perez93}
+{\sc Perez, R., Seals, R. {\rm a} Michalsky, J.} (1993).
+\newblock All-weather model for sky luminance distribution---preliminary
+  configuration and validation.
+\newblock \emph{Solar Energy}, {\bf 50}\penalty0 (3), \penalty0 235--245.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/0038-092X(93)90017-I}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0038092X9390017I}.
+
+\bibitem[{scikit-image}(2021)]{rgbgray}
+{\sc {scikit-image}} (2021).
+\newblock {RGB to Grayscale}.
+\newblock
+  \url{https://scikit-image.org/docs/dev/auto_examples/color_exposure/plot_rgb_to_gray.html}.
+\newblock Accessed: 2023-04-17.
+
+\bibitem[Wikipedia(2023)]{wiki:spherical}
+{\sc Wikipedia} (2023).
+\newblock Sférická soustava souřadnic.
+\newblock URL
+  \url{https://cs.wikipedia.org/wiki/Sf%C3%A9rick%C3%A1_soustava_sou%C5%99adnic#/media/Soubor:Spherical_with_grid.svg}.
+\newblock Accessed: 2023-04-17.
+
+\bibitem[Wilkie a~kol.(2021)Wilkie, Vevoda, Bashford-Rogers, Ho\v{s}ek, Iser,
+  Kol\'{a}\v{r}ov\'{a}, Rittig a K\v{r}iv\'{a}nek]{Prague2021}
+{\sc Wilkie, A., Vevoda, P., Bashford-Rogers, T., Ho\v{s}ek, L., Iser, T.,
+  Kol\'{a}\v{r}ov\'{a}, M., Rittig, T. {\rm a} K\v{r}iv\'{a}nek, J.} (2021).
+\newblock A fitted radiance and attenuation model for realistic atmospheres.
+\newblock \emph{ACM Trans. Graph.}, {\bf 40}\penalty0 (4).
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/3450626.3459758}.
+\newblock URL \url{https://doi.org/10.1145/3450626.3459758}.
+
+\end{thebibliography}

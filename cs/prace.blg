@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: prace.aux
+A level-1 auxiliary file: titulka.aux
+A level-1 auxiliary file: uvod.aux
+A level-1 auxiliary file: kap01.aux
+A level-1 auxiliary file: kap02.aux
+A level-1 auxiliary file: kap03.aux
+A level-1 auxiliary file: kap04.aux
+A level-1 auxiliary file: zaver.aux
+A level-1 auxiliary file: literatura.aux
+The style file: czplainnat.bst
+Database file #1: literatura.bib
+Warning--I didn't find a database entry for "Andel07"
+Warning--I didn't find a database entry for "KaplanMeier58"
+Warning--I didn't find a database entry for "Cox72"
+Warning--I didn't find a database entry for "Student08"
+Warning--I didn't find a database entry for "Andel98"
+Warning--I didn't find a database entry for "LehmannCasella98"
+Warning--I didn't find a database entry for "DempsterLairdRubin77"
+Warning--I didn't find a database entry for "Genberget08"
+You've used 9 entries,
+            2828 wiz_defined-function locations,
+            697 strings with 7174 characters,
+and the built_in function-call counts, 4257 in all, are:
+= -- 379
+> -- 287
+< -- 5
++ -- 99
+- -- 90
+* -- 380
+:= -- 698
+add.period$ -- 40
+call.type$ -- 9
+change.case$ -- 57
+chr.to.int$ -- 9
+cite$ -- 18
+duplicate$ -- 153
+empty$ -- 301
+format.name$ -- 99
+if$ -- 860
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 66
+num.names$ -- 36
+pop$ -- 111
+preamble$ -- 1
+purify$ -- 48
+quote$ -- 0
+skip$ -- 118
+stack$ -- 0
+substring$ -- 89
+swap$ -- 21
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 99
+warning$ -- 0
+while$ -- 32
+width$ -- 0
+write$ -- 146
+(There were 8 warnings)
