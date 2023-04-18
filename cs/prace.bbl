@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,10 +23,23 @@
 \newblock \doi{10.5194/gmd-9-1647-2016}.
 \newblock URL \url{https://gmd.copernicus.org/articles/9/1647/2016/}.
 
+\bibitem[Famfulík(2008)]{Famfulik08}
+{\sc Famfulík, L.} (2008).
+\newblock Digitální kyvadlový inklinometr.
+\newblock bakalářská práce, Vysoké učení technické v Brně.
+\newblock URL
+  \url{https://www.vut.cz/www_base/zav_prace_soubor_verejne.php?file_id=9490}.
+
+\bibitem[Hold-Geoffroy a~kol.(2022)Hold-Geoffroy, Piché-Meunier, Sunkavalli,
+  Bazin, Rameau a Lalonde]{deepcalib}
+{\sc Hold-Geoffroy, Y., Piché-Meunier, D., Sunkavalli, K., Bazin, J.-C.,
+  Rameau, F. {\rm a} Lalonde, J.-F.} (2022).
+\newblock A deep perceptual measure for lens and camera calibration.
+
 \bibitem[Hoško(2014)]{Hosko14}
 {\sc Hoško, J.} (2014).
 \newblock Bezpečnostní kamerové systémy.
-\newblock Master's thesis, České vysoké učení technické v Praze.
+\newblock diplomová práce, České vysoké učení technické v Praze.
 \newblock URL \url{https://dspace.cvut.cz/handle/10467/24416}.
 
 \bibitem[Lalonde a~kol.(2010)Lalonde, Narasimhan a Efros]{Lalonde10}
@@ -59,6 +72,13 @@
   \url{https://scikit-image.org/docs/dev/auto_examples/color_exposure/plot_rgb_to_gray.html}.
 \newblock Accessed: 2023-04-17.
 
+\bibitem[{Wikipedia}(2023)]{rpy}
+{\sc {Wikipedia}} (2023).
+\newblock {Aircraft Principal Axes}.
+\newblock
+  \url{https://en.wikipedia.org/wiki/Aircraft_principal_axes#/media/File:Yaw_Axis_Corrected.svg}.
+\newblock Accessed: 2023-04-18.
+
 \bibitem[Wikipedia(2023)]{wiki:spherical}
 {\sc Wikipedia} (2023).
 \newblock Sférická soustava souřadnic.
@@ -75,5 +95,11 @@
 \newblock ISSN 0730-0301.
 \newblock \doi{10.1145/3450626.3459758}.
 \newblock URL \url{https://doi.org/10.1145/3450626.3459758}.
+
+\bibitem[{Český hydrometeorologický ústav}(2023)]{chmu}
+{\sc {Český hydrometeorologický ústav}} (2023).
+\newblock {Mapa webových kamer}.
+\newblock \url{https://www.chmi.cz/files/portal/docs/meteo/kam/}.
+\newblock Accessed: 2023-04-18.
 
 \end{thebibliography}

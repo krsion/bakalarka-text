@@ -2,12 +2,15 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Sférická soustava souřadnic \cite {wiki:spherical}}}{3}{figure.1.1}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Vliv ohniskové vzdálenosti na zorný úhel \cite {nikon}}}{4}{figure.1.2}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Pozice slunce $(\theta _s, \gamma _s)$, orientace kamery $(\theta _c, \gamma _c)$, pozice bodu na obloze $(\theta _p, \gamma _p)$, úhel bodu na obloze se sluncem $\gamma _p$, pozice bodu na obrázku $(u_p, v_p)$ (\citealp {Lalonde10}, strana 15)}}{6}{figure.1.3}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Polohové úhly \cite {rpy}}}{5}{figure.1.3}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Polohové úhly \citep {Famfulik08}}}{5}{figure.1.4}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Pozice slunce $(\theta _s, \gamma _s)$, orientace kamery $(\theta _c, \gamma _c)$, pozice bodu na obloze $(\theta _p, \gamma _p)$, úhel bodu na obloze se sluncem $\gamma _p$, pozice bodu na obrázku $(u_p, v_p)$ (\citealp {Lalonde10}, strana 15)}}{7}{figure.1.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Mapa webových kamer \cite {chmu}}}{9}{figure.2.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Náhodný výběr z~rozdělení $\mathcal {N}_2(\bm {0},\,I)$.}}{17}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Hustoty několika normálních rozdělení.}}{18}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Hustoty několika normálních rozdělení.}}{19}{figure.4.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Náhodný výběr z~rozdělení $\mathcal {N}_2(\bm {0},\,I)$.}}{18}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Hustoty několika normálních rozdělení.}}{19}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Hustoty několika normálních rozdělení.}}{20}{figure.4.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

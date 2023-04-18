@@ -19,45 +19,46 @@ Warning--I didn't find a database entry for "Andel98"
 Warning--I didn't find a database entry for "LehmannCasella98"
 Warning--I didn't find a database entry for "DempsterLairdRubin77"
 Warning--I didn't find a database entry for "Genberget08"
-You've used 9 entries,
+Warning--empty journal in deepcalib
+You've used 13 entries,
             2828 wiz_defined-function locations,
-            697 strings with 7174 characters,
-and the built_in function-call counts, 4257 in all, are:
-= -- 379
-> -- 287
-< -- 5
-+ -- 99
-- -- 90
-* -- 380
-:= -- 698
-add.period$ -- 40
-call.type$ -- 9
-change.case$ -- 57
-chr.to.int$ -- 9
-cite$ -- 18
-duplicate$ -- 153
-empty$ -- 301
-format.name$ -- 99
-if$ -- 860
+            719 strings with 7872 characters,
+and the built_in function-call counts, 5718 in all, are:
+= -- 508
+> -- 374
+< -- 8
++ -- 130
+- -- 117
+* -- 487
+:= -- 941
+add.period$ -- 54
+call.type$ -- 13
+change.case$ -- 80
+chr.to.int$ -- 13
+cite$ -- 27
+duplicate$ -- 215
+empty$ -- 415
+format.name$ -- 130
+if$ -- 1157
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 66
-num.names$ -- 36
-pop$ -- 111
+missing$ -- 5
+newline$ -- 88
+num.names$ -- 52
+pop$ -- 163
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 65
 quote$ -- 0
-skip$ -- 118
+skip$ -- 162
 stack$ -- 0
-substring$ -- 89
-swap$ -- 21
+substring$ -- 97
+swap$ -- 27
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 99
-warning$ -- 0
-while$ -- 32
+type$ -- 143
+warning$ -- 1
+while$ -- 44
 width$ -- 0
-write$ -- 146
-(There were 8 warnings)
+write$ -- 199
+(There were 9 warnings)

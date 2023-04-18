@@ -19,8 +19,14 @@ Orientaci kamery v terénu pak definujeme pomocí úhlů ($\theta_c, \phi_c$) ur
 \end{figure}
 
 
-\section{Ohnisková vzdálenost a zorný úhel}
- Pro nás nejvýznamější parametr objektivu je ohnisková vzdálenost $f_c$, pomocí které lze určit zorné pole kamery.
+\section{Parametry kamery}
+
+Rozlišujeme vnější a vnitřní parametry kamery.
+
+
+\subsection{Vnitřní parametry kamery}
+Vnitřní parametry kamery jsou např. ohnisková vzdálenost $f_c$, vertikální a horizontální zorný úhel, veliost clony, rychlost závěrky nebo světelnost objektivu.
+Nejvýznamější vnitřní parametr objektivu je ohnisková vzdálenost $f_c$, pomocí které lze určit zorné pole kamery.
 
 \begin{definice}[Ohnisková vzdálenost]\label{def01:3}
   Ohnisková vzdálenost $f_c~\text{[mm]}$ je vzdálenost mezi optickým středem objektivu a rovinou snímače (čipu) při zaostření na nekonečno. \citep{Hosko14}
@@ -44,6 +50,30 @@ My budeme ohniskovou vzdálenost modelovat v pixelech, protože neznáme velikos
   \caption{Vliv ohniskové vzdálenosti na zorný úhel \cite{nikon}}
 \end{figure}
 
+\subsection{Vnější parametry kamery}
+
+Mezi vnější parametry kamery patří její orientace (zenit $\theta_c$, azimut $\phi_c$).
+Alternativou, jak popsat směřování kamery, je s pomocí úhlů kolem osy $x$, $y$ a $z$:
+
+\begin{itemize}
+    \item $\theta'$ - úhel kolem osy $x$, označovaný jako podélný sklon nebo anglicky pitch, $\theta' = \pi/2 - \theta_c$
+    \item $\psi'$ - úhel kolem osy $y$, označovaný jako příčný náklon nebo anglicky roll
+    \item $\phi'$ - úhel kolem osy $z$, označovaný jako azimut, kurs nebo anglicky yaw
+\end{itemize}
+
+
+
+\begin{figure}[h]\centering
+    \includegraphics[width=80mm]{../img/rollpitchyaw}
+    \caption{Polohové úhly \cite{rpy}}
+
+\end{figure}
+
+\begin{figure}[h]\centering
+    \includegraphics[width=80mm]{../img/naklon}
+    \caption{Polohové úhly \citep{Famfulik08}}
+
+\end{figure}
 
 \section{Nalezení bodu na obloze}
 Abychom mohli modelovat snímek oblohy kamerou s parametry $(f_c, \theta_c, \phi_c)$, musíme převést pozici pixelu na snímku na pozici bodu na obloze.
