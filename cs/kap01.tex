@@ -76,7 +76,7 @@ Alternativou, jak popsat směřování kamery, je s pomocí úhlů kolem osy $x$
 \end{figure}
 
 \section{Nalezení bodu na obloze}
-Abychom mohli modelovat snímek oblohy kamerou s parametry $(f_c, \theta_c, \phi_c)$, musíme převést pozici pixelu na snímku na pozici bodu na obloze.
+Abychom mohli modelovat snímek oblohy kamerou s parametry $(f_c, \theta_c, \phi_c)$, musíme převést pozici pixelu na snímku na pozici bodu na obloze. Předpokládáme, že horizont je rovnoběžný se spodní hranou snímku.
 
 \begin{lemma}\label{lemma01:2}(\citealp{Lalonde10}, Appendix B)
   Buď  $\phi_c$ azimut kamery, $\theta_c$ zenit kamery, $f_c~\text{[px]}$ ohnisková vzdálenost kamery, $(W, H)~\text{[px]}$ rozlišení snímku, ($x_p, y_p$) pozice pixelu (horizontální a vertikální vzdálenost od levého horního rohu snímku). Nechť $u_p = x_p - W/2$, $v_p = H/2 - y_p$. Pak
@@ -125,15 +125,14 @@ Nás nejvíce bude zajímat vztah mezi radiometrickou veličinou zář a fotomet
   \end{equation}
 \end{definice}
 
-Příklad využití spektrální citlivosti oka je převod RGB snímku do jednoho kanálu L \citep{rgbgray}.
-\begin{equation}
-  L = 0.2126 \cdot R + 0.7152 \cdot G + 0.0722 \cdot B 
-\end{equation}
+\begin{figure}[htb]\centering
+  \includegraphics[width=100mm]{../img/cipky}
+  \caption{Spektrální odezva tří typů čípků v lidském oku \citep{cipky}}
+\end{figure}
 
 \section{Perezův model oblohy}
+Modely oblohy mají za cíl určit intenzitu světla (celkovou nebo pro danou vlnovou délku nebo barevný kanál) přicházejícího z daného směru z jasné oblohy bez oblačnosti při zvolených parametrech atmosféry a pozice slunce.
 Tento analytický model oblohy byl poprvé představen v článku \cite{Perez93}.
-Model bere v úvahu zenit pozorovaného bodu $\theta$ a úhel se sluncem $\gamma$.
-
 \begin{veta}\label{veta01:1}(\citealp{Perez93})
 Relativní jas bodu na obloze vůči jasu zenitu je dán vztahem:
 \begin{equation}\label{eq01:5}
@@ -155,7 +154,7 @@ Výhoda Perezova modelu je jeho jednoduchost. Je vhodný pro simulace, ve který
 
 Pražský model oblohy \citep{Prague2021} byl vyvinut na Matematicko-fyzikálni fakultě Univerzity Karlovy. 
 Oproti Perezovu modelu nepočítá relativní jas (fotometrická veličina), ale zář (radiometrická veličina). 
-Není to analytický model, ale přistupuje k datům vygenerovaným fyzikálním simulátorem Libradtran \citep{Libradtran2016}, které jsou komprimovány do souboru o velikosti cca 2GB. 
+Není to analytický model, ale přistupuje k datům vygenerovaným fyzikálním simulátorem ART (Advanced Rendering Toolkit), které jsou komprimovány do souboru o velikosti cca 2GB. 
 Díky tomu je pražský model přesnější a obecnější než Perezův model a zároveň je rychlejší, než fyzikální simulace.
 
 \subsection{Matematický popis}
@@ -165,12 +164,13 @@ Pražský model oblohy zohledňuje následující proměnné:
   \item $\gamma_p$: úhel mezi pozorovaným bodem a sluncem
   \item $\phi_s$: azimut slunce
   \item $\theta_s$: zenit slunce
-  \item $viditelnost[km]$ (za jasného dne zhruba 100km)
+  \item $viditelnost~[km]$ (za jasného dne zhruba $100~km$)
   \item $albedo$: míra odrazivosti země, v rozsahu od 0 do 1. (Zasněžená krajina má vyšší albedo než travnatá plocha)
-  \item vlnová délka [nm]: při generování obrazu nás bude zajímat červená, zelená a modrá barva, které odpovídají vlnovým délkám 650nm, 550nm a 450nm. 
+  \item vlnová délka [nm]: při generování obrazu nás bude zajímat červená, zelená a modrá barva, které odpovídají vlnovým délkám $650~nm$, $550~nm$ a $450~nm$. 
+  \item TODO: OD MARTINA lepší by bylo integrovat přes všechny vlnové délky (přenásobit spektrální odezvou), ale jako aproximace by to mohlo stačit (bylo by dobré uvést, že vzít vlnové délky špiček nestačí, pokud chceme vizuálně správný výsledek)
 \end{itemize}
 a vrací spektrální zář  $L_e [W \cdot sr^{-1} \cdot m^{-2} \cdot nm^{-1}]$.
 \subsection{Využití}
-Model je použit ve fotorealistickém renderovacím softwaru Corona Renderer od společnosti Chaos Czech a.s. \citep{corona}. 
+Model je použit například ve fotorealistickém renderovacím softwaru Corona Renderer od společnosti Chaos Czech a.s. \citep{corona}. 
 Jeho hlavní oblasti využití zahrnují architektonické vizualizace, interiérový design, filmový a televizní průmysl, reklamu a 3D vizualizace a animace. Corona Renderer je kompatibilní s programy jako Autodesk 3ds Max a Cinema 4D, což usnadňuje jeho integraci do stávajících pracovních postupů.
 
