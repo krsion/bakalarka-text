@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,18 +23,6 @@
 \newblock Imagenet: A large-scale hierarchical image database.
 \newblock In \emph{2009 IEEE conference on computer vision and pattern
   recognition}, pages 248--255. Ieee.
-
-\bibitem[Emde a~kol.(2016)Emde, Buras-Schnell, Kylling, Mayer, Gasteiger,
-  Hamann, Kylling, Richter, Pause, Dowling a Bugliaro]{Libradtran2016}
-{\sc Emde, C., Buras-Schnell, R., Kylling, A., Mayer, B., Gasteiger, J.,
-  Hamann, U., Kylling, J., Richter, B., Pause, C., Dowling, T. {\rm a}
-  Bugliaro, L.} (2016).
-\newblock The libradtran software package for radiative transfer calculations
-  (version 2.0.1).
-\newblock \emph{Geoscientific Model Development}, {\bf 9}\penalty0 (5),
-  \penalty0 1647--1672.
-\newblock \doi{10.5194/gmd-9-1647-2016}.
-\newblock URL \url{https://gmd.copernicus.org/articles/9/1647/2016/}.
 
 \bibitem[Famfulík(2008)]{Famfulik08}
 {\sc Famfulík, L.} (2008).
@@ -95,12 +83,12 @@
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/0038092X9390017I}.
 
-\bibitem[{scikit-image}(2021)]{rgbgray}
-{\sc {scikit-image}} (2021).
-\newblock {RGB to Grayscale}.
-\newblock
-  \url{https://scikit-image.org/docs/dev/auto_examples/color_exposure/plot_rgb_to_gray.html}.
-\newblock Accessed: 2023-04-17.
+\bibitem[Wikipedia(2023)]{cipky}
+{\sc Wikipedia} (2023).
+\newblock Spectral sensitivity.
+\newblock URL
+  \url{https://en.wikipedia.org/wiki/Spectral_sensitivity#/media/File:Cones_SMJ2_E.svg}.
+\newblock Accessed: 2023-04-19.
 
 \bibitem[{Wikipedia}(2023)]{rpy}
 {\sc {Wikipedia}} (2023).

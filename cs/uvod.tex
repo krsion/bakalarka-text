@@ -1,8 +1,12 @@
 \chapter*{Úvod}
 \addcontentsline{toc}{chapter}{Úvod}
 
-Meteorologické webové kamery představují významný zdroj informací o počasí, oblačnosti a dalších atmosférických jevech. Kromě přímého využití v meteorologii mohou tyto kamery sloužit i pro další účely, jako je renderování realistických mraků a oblohy v různých aplikacích, například ve filmovém průmyslu, videohrách či simulacích. Klíčovým faktorem pro dosažení vysoké úrovně realismu v takových aplikacích je správná kalibrace webových kamer, což zahrnuje určení parametrů kamery, jako jsou azimut, zenit, natočení a zorné pole. Tyto údaje však nemusejí být známé, proto existují metody pro jejich aproximaci.
+Meteorologické webové kamery představují významný zdroj informací o počasí, oblačnosti a dalších atmosférických jevech. 
+Kromě přímého využití v meteorologii mohou tyto kamery sloužit i jako zdroj trénovacích dat pro neuronové sítě generující realistické mraky na obloze. 
+Sběr dat z webových meteorologických kamer je pro výzkumníky neuronových sítí levnější než focení oblohy ručně.
+Tyto neuronové sítě mají uplatnění například ve filmovém průmyslu, videohrách či simulacích. 
+Pro dosažení vysoké úrovně realismu je důležitá správná kalibrace webových kamer, což zahrnuje určení parametrů kamery, jako jsou azimut, zenit, natočení a zorné pole. Tyto údaje však nemusejí být známé, proto existují metody pro jejich aproximaci.
 
-Cílem této bakalářské práce je porovnat stávající přístupy k automatickému nalezení chybějících parametrů meteorologických kamer, konkrétně metody Lalonde08/10 a Hold-Geoffroy. Následně je zamýšleno vylepšit metodu Lalonde08/10 integrací modelu oblohy Prague Sky Model.
+Cílem této bakalářské práce je porovnat stávající přístupy k automatické kalibraci kamer, konkrétně metody \cite{Lalonde10} a \cite{deepcalib}. Následně je zamýšleno vylepšit první zmíněnou metodu integrací modelu oblohy Prague Sky Model \citep{Prague2021}.
 
 Pro validaci navrženého řešení  bude využit dataset webových kamer od Českého hydrometeorologického ústavu (ČHMÚ), který poskytuje obrazová data z 98 webových kamer.
