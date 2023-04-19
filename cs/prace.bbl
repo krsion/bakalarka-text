@@ -1,15 +1,28 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[{360 Cities Holding B.V.}(2023)]{360cities}
+{\sc {360 Cities Holding B.V.}} (2023).
+\newblock {360Cities}.
+\newblock \url{https://www.360cities.net/}.
+\newblock Accessed: 2023-04-19.
+
 \bibitem[{Chaos Czech a.s.}(2023)]{corona}
 {\sc {Chaos Czech a.s.}} (2023).
 \newblock {Corona Renderer}.
 \newblock \url{https://corona-renderer.com/}.
 \newblock Accessed: 2023-04-17.
+
+\bibitem[Deng a~kol.(2009)Deng, Dong, Socher, Li, Li a Fei-Fei]{imagenet}
+{\sc Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K. {\rm a} Fei-Fei, L.}
+  (2009).
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In \emph{2009 IEEE conference on computer vision and pattern
+  recognition}, pages 248--255. Ieee.
 
 \bibitem[Emde a~kol.(2016)Emde, Buras-Schnell, Kylling, Mayer, Gasteiger,
   Hamann, Kylling, Richter, Pause, Dowling a Bugliaro]{Libradtran2016}
@@ -41,6 +54,23 @@
 \newblock Bezpečnostní kamerové systémy.
 \newblock diplomová práce, České vysoké učení technické v Praze.
 \newblock URL \url{https://dspace.cvut.cz/handle/10467/24416}.
+
+\bibitem[Huang a~kol.(2017)Huang, Liu, van~der Maaten a Weinberger]{densenet}
+{\sc Huang, G., Liu, Z., van~der Maaten, L. {\rm a} Weinberger, K.~Q.} (2017).
+\newblock Densely connected convolutional networks.
+\newblock pages 2261--2269.
+\newblock URL
+  \url{http://dblp.uni-trier.de/db/conf/cvpr/cvpr2017.html#HuangLMW17}.
+
+\bibitem[Kingma a Ba(2014)]{adam}
+{\sc Kingma, D.~P. {\rm a} Ba, J.} (2014).
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}.
+
+\bibitem[Kullback a Leibler(1951)]{kldivergence}
+{\sc Kullback, S. {\rm a} Leibler, R.~A.} (1951).
+\newblock On information and sufficiency.
+\newblock \emph{Ann. Math. Statist.}, {\bf 22}\penalty0 (1), \penalty0 79--86.
 
 \bibitem[Lalonde a~kol.(2010)Lalonde, Narasimhan a Efros]{Lalonde10}
 {\sc Lalonde, J.-F., Narasimhan, S.~G. {\rm a} Efros, A.~A.} (2010).

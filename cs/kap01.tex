@@ -100,7 +100,7 @@ Abychom mohli modelovat snímek oblohy kamerou s parametry $(f_c, \theta_c, \phi
 
 \begin{figure}[h]\centering
   \includegraphics[width=140mm]{../img/uhly}
-  \caption{Pozice slunce $(\theta_s, \gamma_s)$, orientace kamery $(\theta_c, \gamma_c)$, pozice bodu na obloze $(\theta_p, \gamma_p)$, úhel bodu na obloze se sluncem $\gamma_p$, pozice bodu na obrázku $(u_p, v_p)$
+  \caption{Pozice slunce $(\theta_s, \gamma_s)$, orientace kamery $(\theta_c, \gamma_c)$, pozice bodu na obloze $(\theta_p, \gamma_p)$, úhel bodu na obloze se sluncem $\gamma_p$, pozice bodu na snímku $(u_p, v_p)$
   (\citealp{Lalonde10}, strana 15)}
 \end{figure}
 
@@ -125,7 +125,7 @@ Nás nejvíce bude zajímat vztah mezi radiometrickou veličinou zář a fotomet
   \end{equation}
 \end{definice}
 
-Příklad využití spektrální citlivosti oka je převod RGB obrázku do jednoho kanálu L \citep{rgbgray}.
+Příklad využití spektrální citlivosti oka je převod RGB snímku do jednoho kanálu L \citep{rgbgray}.
 \begin{equation}
   L = 0.2126 \cdot R + 0.7152 \cdot G + 0.0722 \cdot B 
 \end{equation}
@@ -167,7 +167,7 @@ Pražský model oblohy zohledňuje následující proměnné:
   \item $\theta_s$: zenit slunce
   \item $viditelnost[km]$ (za jasného dne zhruba 100km)
   \item $albedo$: míra odrazivosti země, v rozsahu od 0 do 1. (Zasněžená krajina má vyšší albedo než travnatá plocha)
-  \item vlnová délka [nm]: při generování obrázků nás bude zajímat červená, zelená a modrá barva, které odpovídají vlnovým délkám 650nm, 550nm a 450nm. 
+  \item vlnová délka [nm]: při generování obrazu nás bude zajímat červená, zelená a modrá barva, které odpovídají vlnovým délkám 650nm, 550nm a 450nm. 
 \end{itemize}
 a vrací spektrální zář  $L_e [W \cdot sr^{-1} \cdot m^{-2} \cdot nm^{-1}]$.
 \subsection{Využití}
